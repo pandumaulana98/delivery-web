@@ -1,47 +1,78 @@
-# Delivery Web Application 🚚
+# Delivery Web Application
 
-Platform untuk menghubungkan pelanggan dengan penyedia jasa/barang dengan tracking real-time dan sistem pembayaran terintegrasi.
+A modern, full-stack delivery management system built with React, TypeScript, and Express.
 
-## 🌟 Fitur Utama
+## Project Structure
 
-### Untuk Pelanggan
-- ✅ Registrasi & login
-- ✅ Browse produk/jasa dari penyedia
-- ✅ Real-time tracking pesanan di peta
-- ✅ Sistem pembayaran (dummy mode)
-- ✅ Riwayat pembelian
-- ✅ Notifikasi status pesanan
+```
+delivery-web/
+├── frontend/          # React + TypeScript + Vite frontend
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── hooks/
+│   │   ├── context/
+│   │   ├── utils/
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   └── public/
+├── backend/           # Express + TypeScript backend
+│   ├── src/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── controllers/
+│   │   ├── middleware/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   ├── config/
+│   │   └── index.ts
+│   └── database/
+│       └── migrations/
+└── README.md
+```
 
-### Untuk Penyedia Jasa
-- ✅ Registrasi & login sebagai penyedia
-- ✅ Post produk/jasa yang ditawarkan
-- ✅ Real-time share lokasi pengiriman
-- ✅ Dashboard earnings
-- ✅ Sistem penarikan dana
-- ✅ Manajemen pesanan
+## Getting Started
 
-## 💰 Sistem Biaya Admin
+### Prerequisites
+- Node.js 18+
+- npm or yarn
 
-Pelanggan membayar: $100
-- Admin fee (2.5%): $2.50
-- Penyedia terima: $97.50
+### Installation
 
-Penyedia tarik dana: $97.50
-- Admin fee (2.5%): $2.44
-- Penyedia terima: $95.06
+1. Install dependencies:
+```bash
+npm install
+```
 
-Total fee aplikator: $4.94 ≈ 5%
+### Development
 
-## 🛠️ Tech Stack
-- Frontend: React 18 + TypeScript + Tailwind CSS
-- Backend: Node.js + Express.js
-- Database: PostgreSQL
-- Real-time: Socket.io
-- Maps: Leaflet + OpenStreetMap
-- Payment: Stripe (test mode)
-- Auth: JWT + Refresh Token
+**Frontend:**
+```bash
+cd frontend
+npm run dev
+```
 
-## 📁 Project Structure
-- frontend/ - React web app
-- backend/ - API server
-- docs/ - Documentation
+**Backend:**
+```bash
+cd backend
+npm run dev
+```
+
+**Both simultaneously (from root):**
+```bash
+npm run dev
+```
+
+## Project Features
+
+- User authentication and authorization
+- Real-time order tracking
+- Delivery status updates
+- Customer notifications
+- Admin dashboard
+- Performance optimizations with TypeScript and Vite
+
+## License
+
+MIT
