@@ -1,0 +1,17 @@
+{
+  "name": "delivery-web",
+  "version": "1.0.0",
+  "description": "Platform delivery dengan tracking real-time",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "dev": "concurrently 'cd frontend && npm start' 'cd backend && npm run dev'",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "npm run build --workspaces",
+    "test": "npm test --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
